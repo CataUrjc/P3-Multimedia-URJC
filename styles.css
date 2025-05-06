@@ -419,9 +419,35 @@ h2 {
   color: #dc3545;
 }
 
+/* Mejora del contraste de iconos del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000; /* O usa #fff si tienes un fondo oscuro */
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo negro semitransparente */
+  background-size: 100% 100%;
+  padding: 15px;
   border-radius: 50%;
-  padding: 10px;
+}
+
+/* Para garantizar visibilidad cuando se usa texto blanco */
+.text-white,
+.text-white-50 {
+  color: #ffffff !important;
+}
+
+/* Enlaces del footer con mayor contraste */
+footer a.text-white {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Mejora general del texto en secciones con fondo claro */
+.bg-light .card-title,
+.bg-light .card-text,
+.bg-light .lead {
+  color: #000000;
+}
+
+/* Mejora accesibilidad en encabezados */
+h1, h2, h3 {
+  color: #111;
 }
