@@ -418,3 +418,10 @@ h2 {
   cursor: not-allowed;
   color: #dc3545;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* O usa #fff si tienes un fondo oscuro */
+  border-radius: 50%;
+  padding: 10px;
+}
